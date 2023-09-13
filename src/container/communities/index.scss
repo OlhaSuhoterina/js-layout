@@ -1,0 +1,96 @@
+@use '../../style' as s;
+
+.page{
+	padding: 24px;
+	max-width: 400px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.button{
+	transition: opasity 0.7s;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.title{
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+}
+
+.main{
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	
+
+	.button{
+		padding-bottom: 12px;
+		border-bottom: 2px solid black;
+		width: 150px;
+		text-align: center;
+	
+	}
+
+	&-viewed {
+		
+		.nav-link{
+			color: #b5b4b4;	
+		}
+	}
+
+	&-link{
+		text-decoration: none;
+		font-size: 18px;
+		color: black;
+	
+	}
+}
+
+.image{
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+.communities-info{
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+	.communities-title{
+		font-size: 18px;
+		font-weight: bold;
+	}
+	.communities-desc{
+		font-size: 16px;
+		line-height: 1.6em;
+		color: #363636;
+	}
+}
+.button-link{
+	background-color: #F46F17;
+	width: 100%;
+	padding: 16px;
+	font-size: 16px;
+	color: white;
+	border-radius: 10px;
+	text-align: center;
+}

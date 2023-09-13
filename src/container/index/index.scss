@@ -1,7 +1,94 @@
 @use '../../style' as s;
 
-main {
-	background: s.color(dark);
-	color: s.color(light);
-	padding: s.space(4);
-} 
+.page{
+	padding: 24px;
+	max-width: 400px;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.button{
+	transition: opasity 0.7s;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.title{
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+}
+
+.post-list{
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.post{
+	padding: 12px;
+	border-radius: 10px;
+	background-color: #f7f7f7;
+	border: 1px solid #f7f7f7;
+
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	&-viewed {
+		background-color: transparent;
+		border-color: #e6e6e6;
+
+		.post-info{
+			color: #888;
+		}
+	}
+}
+
+.post-header{
+	display: flex;
+	justify-content: space-between;
+}
+
+.post-category-list{
+	display: flex;
+	gap: 16px;
+}
+
+.post-data{
+	color: #888;
+	font-size: 14px;
+}
+
+.post-info{
+	font-size: 16px;
+	line-height: 1.4em;
+	color: #121212;
+}
+
+.post-category {
+	padding: 8px 12px;
+	font-size: 12px;
+	border-radius: 50px;
+
+	&-1 {
+		color: #f46F17;
+		background-color: #f7e9e7;
+	}
+	
+	&-2 {
+		color: #ec9ed4;
+		background-color: #f6e8ef;
+	}
+}
